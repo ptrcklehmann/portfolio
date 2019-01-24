@@ -20,6 +20,7 @@ export const Card = styled(CardRebass).attrs({
   bg: 'white',
   boxShadow: 0,
   borderRadius: 8,
+  color: 'black',
 })`
   position: relative;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);

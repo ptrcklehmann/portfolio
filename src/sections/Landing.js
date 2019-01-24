@@ -7,6 +7,7 @@ import Section from '../components/Section';
 import SocialLink from '../components/SocialLink';
 import MouseIcon from '../components/MouseIcon';
 import Triangle from '../components/Triangle';
+import { relative } from 'path';
 
 const Background = () => (
   <div>
@@ -77,10 +78,13 @@ const LandingPage = () => (
               fontSize={[4, 5, 6]}
               mb={[3, 5]}
               textAlign="center"
+              
             >
-              <TextLoop>
+            <TextLoop css={{
+              position: 'relative'
+            }}>
                 {roles.map(text => (
-                  <Text width={[400, 500]} key={text}>
+                  <Text width={[400, 500]}  key={text}>
                     {text}
                   </Text>
                 ))}
