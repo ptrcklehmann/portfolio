@@ -17,10 +17,10 @@ export const CardContainer = styled.div`
 `;
 
 export const Card = styled(CardRebass).attrs({
-  bg: 'white',
+  bg: '#3a3a3a',
   boxShadow: 0,
   borderRadius: 8,
-  color: 'black',
+  color: 'white',
 })`
   position: relative;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);

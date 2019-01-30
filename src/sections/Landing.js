@@ -7,31 +7,32 @@ import Section from '../components/Section';
 import SocialLink from '../components/SocialLink';
 import MouseIcon from '../components/MouseIcon';
 import Triangle from '../components/Triangle';
+
 import { relative } from 'path';
 
 const Background = () => (
   <div>
     <Triangle
-      color="backgroundDark"
+      color="pretinho"
       height={['35vh', '80vh']}
       width={['95vw', '60vw']}
     />
 
     <Triangle
-      color="secondary"
+      color="pretinhoEscuro"
       height={['38vh', '80vh']}
       width={['50vw', '35vw']}
     />
 
     <Triangle
-      color="primaryDark"
+      color="pretinhoEscurao"
       height={['25vh', '35vh']}
       width={['75vw', '60vw']}
       invertX
     />
 
     <Triangle
-      color="backgroundDark"
+      color="pretinhoEscuro"
       height={['20vh', '20vh']}
       width={['100vw', '100vw']}
       invertX
@@ -41,12 +42,13 @@ const Background = () => (
 );
 
 const LandingPage = () => (
-  <Section.Container id="home" Background={Background}>
+  <Section.Container id="home" /* Background={Background} */>
     <StaticQuery
       query={graphql`
         query SiteTitleQuery {
           contentfulAbout {
             name
+            description
             roles
             socialLinks {
               id
@@ -58,7 +60,7 @@ const LandingPage = () => (
         }
       `}
       render={data => {
-        const { name, socialLinks, roles } = data.contentfulAbout;
+        const { name, description, socialLinks, roles } = data.contentfulAbout;
 
         return (
           <Fragment>
@@ -69,26 +71,34 @@ const LandingPage = () => (
               fontSize={[5, 6, 8]}
               mb={[3, 4, 5]}
             >
-              {`Hello, I'm ${name}!`}
+              {`Hey there, I'm ${name}!`}
+            </Heading>
+            <Heading
+              textAlign="center"
+              as="h3"
+              color="primary"
+              fontSize={[3, 4, 5]}
+              mb={[3, 4, 5]}
+            >
+              {`${description}`}
             </Heading>
 
             <Heading
               as="h2"
-              color="primary"
+              color="verde"
               fontSize={[4, 5, 6]}
               mb={[3, 5]}
               textAlign="center"
               
             >
-            <TextLoop css={{
-              position: 'relative'
-            }}>
+            <TextLoop>
                 {roles.map(text => (
-                  <Text width={[400, 500]}  key={text}>
+                  <Text width={[400, 500]} key={text}>
                     {text}
                   </Text>
                 ))}
-              </TextLoop>
+            </TextLoop>
+              
             </Heading>
 
             <Flex alignItems="center" justifyContent="center" flexWrap="wrap">

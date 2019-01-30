@@ -15,21 +15,21 @@ import Hide from '../components/Hide';
 const Background = () => (
   <div>
     <Triangle
-      color="secondaryLight"
+      color="pretinho"
       height={['80vh', '80vh']}
       width={['100vw', '100vw']}
       invertX
     />
 
     <Triangle
-      color="background"
+      color="pretinhoEscurao"
       height={['50vh', '20vh']}
       width={['50vw', '50vw']}
       invertX
     />
 
     <Triangle
-      color="primaryDark"
+      color="pretinhoClaro"
       height={['25vh', '40vh']}
       width={['75vw', '60vw']}
       invertX
@@ -37,7 +37,7 @@ const Background = () => (
     />
 
     <Triangle
-      color="backgroundDark"
+      color="pretinho"
       height={['25vh', '20vh']}
       width={['100vw', '100vw']}
       invertY
@@ -149,11 +149,11 @@ const Project = ({
               />
             </Box>
           </Flex>
-          <ImageSubtitle bg="primaryLight" color="white" y="bottom" x="right">
+          <ImageSubtitle bg="verde" color="pretinho" y="bottom" x="right">
             {type}
           </ImageSubtitle>
           <Hide query={MEDIA_QUERY_SMALL}>
-            <ImageSubtitle bg="backgroundDark" invert>
+            <ImageSubtitle bg="verde" color="pretinho" invert>
               {publishedDate}
             </ImageSubtitle>
           </Hide>

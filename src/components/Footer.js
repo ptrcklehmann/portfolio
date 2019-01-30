@@ -3,13 +3,11 @@ import styled from 'styled-components';
 import { Text, Flex, Box } from 'rebass';
 import Fade from 'react-reveal/Fade';
 import PropTypes from 'prop-types';
-import ContentfulLogo from './Logo/Contenful.svg';
-import GatsbyLogo from './Logo/Gatsby.svg';
 
 const FooterContainer = styled.footer`
   padding: 1em;
-  background: ${props => props.theme.colors.primaryDark};
-  color: ${props => props.theme.colors.background};
+  background: ${props => props.theme.colors.pretinho};
+  color: ${props => props.theme.colors.verde};
   display: flex;
   flex: 0 1 auto;
   flex-direction: column;
@@ -49,15 +47,15 @@ const Footer = () => (
           mb={2}
           pb={1}
           style={{
-            textTransform: 'uppercase',
+          
             borderBottom: 'white 3px solid',
             display: 'table',
           }}
         >
-          Powered By
+          Copyright &copy; 2019 Patrick Lehmann
         </Text>
       </span>
-      <Flex justifyContent="center" alignItems="center">
+{/*       <Flex justifyContent="center" alignItems="center">
         <Logo
           url="https://www.contentful.com/"
           logo={ContentfulLogo}
@@ -73,7 +71,7 @@ const Footer = () => (
           logo={GatsbyLogo}
           alt="Gatsby Logo"
         />
-      </Flex>
+      </Flex> */}
     </Fade>
   </FooterContainer>
 );

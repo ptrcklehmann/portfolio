@@ -2,13 +2,17 @@ const colors = {
   background: '#414a4c',
   backgroundDark: '#232b2b',
 
-  primary: '#b3b6b7',
-  primaryLight: '#232b2b',
-  primaryDark: '#232b2b',
+  primary: '#acacac',
+  
+  branco: '#f1f1f1',
 
-  secondary: '#3b444b',
-  secondaryLight: '#3b444b',
-  secondaryDark: '#b3b6b7',
+  pretinho: '#272727',
+  pretinhoEscuro: '#232323',
+  pretinhoEscurao: '#1f1f1f',
+  grafite: '#3a3a3a',
+
+  verde: '#29f3c3',
+  verdeEscuro: '#189175',
 };
 
 module.exports = {

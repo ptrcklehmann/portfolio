@@ -1,17 +1,19 @@
 import styled from 'styled-components';
-import { path } from 'ramda';
+import {
+  path
+} from 'ramda';
 
-const LinkAnimated = styled.span`
+const LinkAnimated = styled.span `
   text-decoration: none;
   position: relative;
   margin-bottom: 0;
   padding-bottom: 5px;
-  color: inherit;
+  color: '#acacac';
   ${props =>
     props.selected &&
-    `border-bottom:  5px solid ${props.theme.colors.primaryLight}`};
-  transition: 0.4s;
-  cursor: ${props => (props.onClick ? 'pointer' : 'default')};
+    `border-bottom:  5px solid ${props.theme.colors.primary}`};
+     transition: 0.4s;
+     cursor: ${props => (props.onClick ? 'pointer' : 'default')};
 
   &:after {
     content: '';
@@ -19,7 +21,7 @@ const LinkAnimated = styled.span`
     right: 0;
     width: 0;
     bottom: -5px;
-    background: ${path(['theme', 'colors', 'secondaryLight'])};
+    background: ${path(['theme', 'colors', 'verde'])};
     height: 5px;
     transition-property: width;
     transition-duration: 0.3s;

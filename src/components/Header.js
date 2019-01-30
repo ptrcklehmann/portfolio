@@ -11,11 +11,15 @@ const capitalize = s => s && s[0].toUpperCase() + s.slice(1);
 
 const HeaderContainer = styled(Headroom)`
   .headroom--pinned {
-    background: ${props => props.theme.colors.primaryDark};
-  }
+    background: ${props => props.theme.colors.pretinhoEscurao};
 
-  position: absolute;
-  width: 100%;
+  }
+  
+
+  span: {
+    color: ${props => props.theme.colors.verde}; }
+    position: absolute;
+    width: 100%;
 `;
 
 const formatLinks = allLinks =>

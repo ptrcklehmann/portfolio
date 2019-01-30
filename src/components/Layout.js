@@ -12,11 +12,12 @@ const GlobalStyle = createGlobalStyle`
 
 body {
   margin: 0;
-  font-family: Cabin;
-  background: black;
+  font-family: Inter UI;
+  background: #272727;
   color: white;
   
 }
+
 `;
 
 config({ ssrFadeout: true });

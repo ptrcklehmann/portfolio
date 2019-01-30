@@ -11,7 +11,7 @@ const IconLink = styled(Link)`
   color: ${path(['theme', 'colors', 'primary'])};
 
   &:hover {
-    color: ${path(['theme', 'colors', 'primaryLight'])};
+    color: ${path(['theme', 'colors', 'verde'])};
   }
 `;
 

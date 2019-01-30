@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 const StyledLink = styled.a`
   display: inline-block;
   transition: color 250ms, text-shadow 250ms;
-  color: black;
+  color: ${props => props.theme.colors.primary};
   text-decoration: none;
   cursor: pointer;
   position: relative;
@@ -20,12 +20,13 @@ const StyledLink = styled.a`
     content: '';
     width: 100%;
     height: 3px;
-    background-color: ${props => props.theme.colors.primaryLight};
+    background-color: ${props => props.theme.colors.verde};
+    color: ${props => props.theme.colors.pretinho};
     transition: all 250ms;
   }
 
   &:hover {
-    color: white;
+    color: '#29f3c3';
 
     &::after {
       height: 110%;
