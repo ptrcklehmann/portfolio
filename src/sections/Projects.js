@@ -45,14 +45,13 @@ const Background = () => (
   </div>
 );
 
-const CARD_HEIGHT = '200px';
+const CARD_HEIGHT = '250px';
 
 const MEDIA_QUERY_SMALL = '@media (max-width: 400px)';
 
 const Title = styled(Text)`
   font-size: 14px;
   font-weight: 600;
-  text-transform: uppercase;
   display: table;
   border-bottom: ${path(['theme', 'colors', 'primary'])} 5px solid;
 `;
