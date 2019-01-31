@@ -82,7 +82,14 @@ const LandingPage = () => (
             >
               {`${description}`}
             </Heading>
-
+            <Heading
+              as="h4"
+              color="primary"
+              fontSize={[2, 3, 4]}
+              mb={[2, 3]}
+              textAlign="center"
+              
+            > Skills: </Heading>
             <Heading
               as="h2"
               color="verde"
@@ -90,7 +97,7 @@ const LandingPage = () => (
               mb={[3, 5]}
               textAlign="center"
               
-            >
+            > 
             <TextLoop>
                 {roles.map(text => (
                   <Text width={[400, 500]} key={text}>
