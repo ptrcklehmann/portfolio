@@ -15,8 +15,12 @@
     "url": "git+https://github.com/ptrcklehmann/portfolio"
   },
   "keywords": [
+    "patrick",
+    "lehmann",
+    "junior",
+    "fullstack",
+    "developer",
     "gatsby",
-    "starter",
     "contentful",
     "PWA",
     "portfolio"
