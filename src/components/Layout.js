@@ -12,7 +12,7 @@ const GlobalStyle = createGlobalStyle`
 
 body {
   margin: 0;
-  font-family: Inter UI;
+  font-family: cabin;
   background: #272727;
   color: white;
   

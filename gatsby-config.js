@@ -45,6 +45,7 @@ module.exports = client.getEntries().then(entries => {
       },
       'gatsby-transformer-remark',
       'gatsby-plugin-offline',
+      `gatsby-plugin-subfont`, 
     ],
   };
 });

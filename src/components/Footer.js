@@ -3,6 +3,9 @@ import styled from 'styled-components';
 import { Text, Flex, Box } from 'rebass';
 import Fade from 'react-reveal/Fade';
 import PropTypes from 'prop-types';
+import ContentfulLogo from './Logo/Contenful.svg';
+import GatsbyLogo from './Logo/Gatsby.svg';
+
 
 const FooterContainer = styled.footer`
   padding: 1em;
@@ -20,8 +23,8 @@ const RenponsiveLogo = styled.img`
   height: 25px;
 
   @media (min-width: 400px) {
-    width: 150px;
-    height: 35px;
+    width: 100px;
+    height: 15px;
   }
 `;
 
@@ -44,24 +47,25 @@ const Footer = () => (
     <Fade bottom>
       <span>
         <Text
-          mb={2}
+          mb={1}
           pb={1}
+          fontSize={1}
           style={{
           
             borderBottom: 'white 3px solid',
-            display: 'table',
+            display: 'inline-block',
           }}
         >
-          Copyright &copy; 2019 Patrick Lehmann
+          Powered with 
         </Text>
       </span>
-{/*       <Flex justifyContent="center" alignItems="center">
+       <Flex justifyContent="center" alignItems="center">
         <Logo
           url="https://www.contentful.com/"
           logo={ContentfulLogo}
           alt="Powered by Contentful"
         />
-        <Text m={2} fontSize={4}>
+        <Text m={1} fontSize={2}>
           <span role="img" aria-label="heart">
             ❤️
           </span>
@@ -71,7 +75,7 @@ const Footer = () => (
           logo={GatsbyLogo}
           alt="Gatsby Logo"
         />
-      </Flex> */}
+      </Flex> 
     </Fade>
   </FooterContainer>
 );
