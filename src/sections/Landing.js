@@ -69,7 +69,7 @@ const LandingPage = () => (
               as="h1"
               color="primary"
               fontSize={[5, 6, 8]}
-              mb={[3, 4, 5]}
+              mb={[1, 4, 1]}
             >
               {`Hey there, I'm ${name}!`}
             </Heading>
@@ -78,7 +78,7 @@ const LandingPage = () => (
               as="h3"
               color="primary"
               fontSize={[3, 4, 5]}
-              mb={[3, 4, 5]}
+              mb={[2, 4, 5]}
             >
               {`${description}`}
             </Heading>
@@ -89,18 +89,19 @@ const LandingPage = () => (
               mb={[2, 3]}
               textAlign="center"
               
-            > Skills: </Heading>
+            > Skills: 
+            </Heading>
             <Heading
               as="h2"
               color="verde"
               fontSize={[4, 5, 6]}
-              mb={[3, 5]}
+              mb={[4, 5]}
               textAlign="center"
               
             > 
             <TextLoop>
                 {roles.map(text => (
-                  <Text width={[400, 500]} key={text}>
+                  <Text width={[200, 400]} key={text}>
                     {text}
                   </Text>
                 ))}
@@ -110,7 +111,7 @@ const LandingPage = () => (
 
             <Flex alignItems="center" justifyContent="center" flexWrap="wrap">
               {socialLinks.map(({ id, ...rest }) => (
-                <Box mx={3} fontSize={[5, 6, 6]} key={id}>
+                <Box mb={[4, 5]} mx={3} fontSize={[5, 6, 6]} key={id}>
                   <SocialLink {...rest} />
                 </Box>
               ))}

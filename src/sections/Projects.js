@@ -53,7 +53,7 @@ const Title = styled(Text)`
   font-size: 14px;
   font-weight: 600;
   display: table;
-  border-bottom: ${path(['theme', 'colors', 'primary'])} 5px solid;
+  border-bottom: ${path(['theme', 'colors', 'primary'])} 3px solid;
 `;
 
 const TextContainer = styled.div`
