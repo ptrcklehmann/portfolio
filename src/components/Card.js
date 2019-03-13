@@ -31,7 +31,7 @@ export const Card = styled(CardRebass).attrs({
 
   &:hover {
     top: -10px;
-    box-shadow: 0 12px 16px rgba(248,249,250, 0.8);
+    box-shadow: 0 8px 8px rgba(240, 239, 234, 0.2);
   }
 `;
 
