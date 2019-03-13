@@ -5,7 +5,7 @@
 
 > My personal portfolio made from a starter for Gatsby integrated with Contentful CMS.
 
-starter: [Starter Stater Mate](https://github.com/EmaSuriano/gatsby-starter-mate)
+starter: [Starter Mate](https://github.com/EmaSuriano/gatsby-starter-mate)
 author: [Emanuel Suriano](https://github.com/EmaSuriano).
 
 
