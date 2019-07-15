@@ -1,35 +1,34 @@
 module.exports = {
-	defaultTitle: 'John Doe',
+	defaultTitle: 'Patrick Lehmann',
 	logo: 'https://portfolio.smakosh.com/favicon/favicon-512.png',
-	author: 'John Doe',
-	url: 'https://portfolio.smakosh.com',
-	legalName: 'John Doe',
-	defaultDescription: 'I’m John and I’m a Backend & Devops engineer!',
+	author: 'Patrick Lehmann',
+	url: 'ptrcklehmann.com',
+	legalName: 'Patrick Lehmann',
+	defaultDescription: 'I’m Patrick and I’m a Fullstack Developer!',
 	socialLinks: {
-		twitter: 'http://www.twitter.com/smakosh',
-		github: 'https://github.com/smakosh',
-		linkedin: 'https://www.linkedin.com/in/ismail-ghallou-630149122/',
-		instagram: 'https://instagram.com/smakosh19',
-		youtube: 'https://www.youtube.com/user/smakoshthegamer',
-		google: 'https://plus.google.com/u/0/+IsmailSmakoshGhallou',
+		twitter: 'http://www.twitter.com/patrico',
+		github: 'https://github.com/ptrcklehmann',
+		linkedin: 'https://www.linkedin.com/in/patrickpl/',
+		instagram: 'https://instagram.com/triconofuba',
+		
 	},
 	googleAnalyticsID: 'UA-88875900-4',
 	themeColor: '#6b63ff',
 	backgroundColor: '#6b63ff',
 	social: {
 		facebook: 'appId',
-		twitter: '@smakosh',
+		twitter: '@patrico',
 	},
 	address: {
-		city: 'City',
-		region: 'Region',
-		country: 'Country',
-		zipCode: 'ZipCode',
+		city: 'Berlin',
+		region: 'Berlin',
+		country: 'Germany',
+		zipCode: '12053',
 	},
 	contact: {
-		email: 'email',
+		email: 'ptrcklehmann@gmail.com',
 		phone: 'phone number',
 	},
-	foundingDate: '2018',
-	recaptcha_key: '6Lcs6lQUAAAAAEwhNH2IsobIe2csdda4TU3efpMN'
+	foundingDate: '2019',
+	recaptcha_key: '6LdTxq0UAAAAAK1mhBkFb-huXaWz-vf10TeGikkv'
 }
