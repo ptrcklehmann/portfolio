@@ -1,11 +1,11 @@
-const path = require('path')
-const config = require('./data/config')
+const path=require('path')
+const config=require('./data/config')
 
 require('dotenv').config({
 	path: `.env.${process.env.NODE_ENV}`,
 })
 
-module.exports = {
+module.exports={
 	siteMetadata: {
 		title: config.defaultTitle,
 		description: config.defaultDescription,
@@ -15,22 +15,22 @@ module.exports = {
 		'gatsby-plugin-react-helmet',
 		'gatsby-plugin-styled-components',
 		/* {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        name: 'assets',
-        path: '${__dirname}/src/assets',
-      },
-    }, */
+	  resolve: 'gatsby-source-filesystem',
+	  options: {
+		name: 'assets',
+		path: '${__dirname}/src/assets',
+	  },
+	}, */
 		'gatsby-transformer-sharp',
 		'gatsby-plugin-sharp',
 		{
-			resolve: 'gatsby-source-graphql',
+			resolve: "gatsby-source-graphql",
 			options: {
-				typeName: 'GitHub',
-				fieldName: 'github',
-				url: 'https://api.github.com/graphql',
+				typeName: "GitHub",
+				fieldName: "github",
+				url: "https://api.github.com/graphql",
 				headers: {
-					Authorization: `bearer ${process.env.GITHUB_TOKEN}`,
+					Authorization: `bearer ${process.env.PORTFOLIO_GITHUB_TOKEN}`,
 				},
 				fetchOptions: {},
 			},
@@ -84,11 +84,11 @@ module.exports = {
 			resolve: `gatsby-plugin-alias-imports`,
 			options: {
 				alias: {
-					Components: path.resolve(__dirname, 'src/components'),
-					Common: path.resolve(__dirname, 'src/components/common'),
-					Static: path.resolve(__dirname, 'static/'),
-					Theme: path.resolve(__dirname, 'src/components/theme'),
-					Data: path.resolve(__dirname, 'data/config'),
+					Components: path.resolve(__dirname,'src/components'),
+					Common: path.resolve(__dirname,'src/components/common'),
+					Static: path.resolve(__dirname,'static/'),
+					Theme: path.resolve(__dirname,'src/components/theme'),
+					Data: path.resolve(__dirname,'data/config'),
 				},
 			},
 		},
