@@ -18,8 +18,11 @@
 - Fetches your Github pinned projects with most stars (You could customize this if you wish)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## Design
 =======
+=======
+>>>>>>> parent of f44dd78 (Update README.md)
 starter: [Starter Stater Mate](https://github.com/EmaSuriano/gatsby-starter-mate)
 author: [Emanuel Suriano](https://github.com/EmaSuriano).
 >>>>>>> parent of f44dd78 (Update README.md)
